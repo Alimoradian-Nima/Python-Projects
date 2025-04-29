@@ -50,3 +50,25 @@ def cat(n):
         print()
 
 cat(5)
+
+def triangle1 (n):
+    for i in range (1,n+1):
+        print('*'*i)
+
+triangle1(5)
+
+def triangle2 (n):
+    for i in range(1,n+1):
+        print(" "*(n-i)+'#'*i)
+
+triangle2(5)
+
+def diamond (n):
+    for i in range(1,2*n):
+        if i<=n:
+            print(' '*(n-i)+'*'*(i)+'*'*(i-1))
+        if i>n:
+            print(' '*(i-n)+'*'*(2*n-i)+'*'*((2*n-1)-i))
+
+diamond(5)
+diamond(10)
